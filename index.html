@@ -262,11 +262,10 @@ SOFTWARE.
             return array;
         }
         
-          var sendMessage = function (msg) {
-            window.parent.postMessage(msg, '*');
-        };
-        var question = document.getElementById('question')
-
+        const message=JSON.stringify({
+          message: data[picked].label,
+        });
+        window.parent.postMessage(message, '*');
     </script>
 </body>
 </html>
