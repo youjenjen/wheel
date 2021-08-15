@@ -261,6 +261,11 @@ SOFTWARE.
 
             return array;
         }
+        
+          var sendMessage = function (msg) {
+            window.parent.postMessage(msg, '*');
+        };
+        var question = document.getElementById('question')
 
     </script>
 </body>
